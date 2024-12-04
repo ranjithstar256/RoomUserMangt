@@ -15,7 +15,7 @@ data class World (
 
 
     @ColumnInfo(name = "Mobile")  // column name 2
-    var Mobile : Int,
+    var Mobile : String,
 
 
     @ColumnInfo(name = "Password")  // column name 3

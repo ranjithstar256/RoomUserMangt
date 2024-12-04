@@ -13,7 +13,7 @@ interface WorldDAO {
 
 
     @Query("select Password from WORLD where Mobile = :name")
-    suspend fun getPasswordByMobile(name: Int): String
+    suspend fun getPasswordByMobile(name: String): String
 
 
 

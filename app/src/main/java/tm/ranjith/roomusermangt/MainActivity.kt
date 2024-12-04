@@ -61,7 +61,7 @@ fun SaveData(db: WorldDatabase) {
         val worldOneData = World(
             0,
             Name,
-            Mobile.toInt(),
+            Mobile,
             Password
         )
         Button(onClick = {
@@ -76,7 +76,7 @@ fun SaveData(db: WorldDatabase) {
 
         Button(onClick = {
             scope.launch {
-                reslt=   db.worlddao().getPasswordByMobile(Mobile.toInt())
+                reslt=   db.worlddao().getPasswordByMobile(Mobile)
 
                 if (reslt.equals(Password)){
                     reslt="success"
